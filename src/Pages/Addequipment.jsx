@@ -9,7 +9,7 @@ const Addequipment = () => {
   const handleSubmit = async (values) => {
     try {
       const token = localStorage.getItem('token')
-      const response = await fetch('http://localhost:5000/api/equipment', {
+      const response = await fetch('https://farrm-render-server2.onrender.com/api/equipment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

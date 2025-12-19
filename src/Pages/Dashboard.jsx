@@ -5,7 +5,7 @@ const Dashboard = () => {
 
   const fetchEquipment = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/equipment');
+      const response = await fetch('https://farrm-render-server2.onrender.com/api/equipment');
       const data = await response.json();
       setEquipmentList(data);
     } catch (error) {
